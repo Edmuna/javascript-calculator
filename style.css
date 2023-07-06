@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #6298aa, #569129, rgba(196, 121, 84, 0.333))
+}
+
+.element {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 70px;
+}
+
+p {
+  padding: 1rem;
+  line-height: 30px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.modal {
+  max-width: 50ch;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: lightgray;
+  text-align: center;
+  border-radius: 10px;
+  border: 0;
+  box-shadow: 0, 0, 1em rgb(0, 0, 0 .6);
+  margin: auto;
+}
+
+.modal .button {
+  margin-left: auto;
+}
+
+.modal::backdrop {
+  background: linear-gradient(45deg, #6298aa, #497381);
+  opacity: 0.4;
+}
+
+.close-button {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 20px;
+  background-color: orange;
+  border: 2px solid orange;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+
+.open-button {
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 20px;
+  color: black;
+  font-weight: bold;
+  background-color: orange;
+  border: 2px solid orange;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+header {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 80px;
+  width: 400px;
+  margin: auto;
+  /* margin-top: 150px; */
+  gap: 2px;
+  border: 2px solid rgb(45, 14, 140);
+  border-radius: 10px;
+  padding: 1px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0, .5);
+}
+
+.child {
+  /* border: 1px solid #000; */
+  /* border-radius: 100%; */
+  transition: transform 0.3s ease;
+  border-radius: 10px;
+}
+
+.child:hover:not(.output) {
+  cursor: pointer;
+  transform: scale(1.01);
+  background-color: #b4d2db;
+}
+
+.output {
+  grid-column: 1/5;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 2rem;
+  color: white;
+}
+
+.zero {
+  grid-row: span 2;
+}
+
+.ac {
+  grid-column: 1/3;
+}
+
+.equal {
+  grid-column: span 2;
+}
+
+div,
+button {
+  font-size: 30px;
+  color: #000;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.light-gray {
+  background-color: lightgray;
+}
+
+.black {
+  background-color: rgba(22, 21, 21, 0.781);
+}
