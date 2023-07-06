@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(180deg, #6298aa, #569129, rgba(196, 121, 84, 0.333))
+  background: linear-gradient(#569129, rgba(196, 121, 84, 0.333))
 }
 
 .element {
